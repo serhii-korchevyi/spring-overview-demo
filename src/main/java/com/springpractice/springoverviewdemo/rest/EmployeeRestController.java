@@ -24,12 +24,12 @@ public class EmployeeRestController {
         this.objectMapper = objectMapper;
     }
 
-    @GetMapping("/employee")
+    @GetMapping("/employees")
     public List<Employee> findAll() {
         return this.employeeService.findAll();
     }
 
-    @GetMapping("/employees/")
+    @GetMapping("/employees/{employeeId}")
     public Employee getEmployee(@PathVariable int employeeId) {
         Employee employee = employeeService.findById(employeeId);
 
