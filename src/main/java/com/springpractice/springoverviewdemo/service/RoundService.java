@@ -44,4 +44,8 @@ public class RoundService {
 
         this.roundRepository.saveAll(rounds);
     }
+
+    public Double getSumOfFourRound() {
+        return this.roundRepository.sumOfFour();
+    }
 }
