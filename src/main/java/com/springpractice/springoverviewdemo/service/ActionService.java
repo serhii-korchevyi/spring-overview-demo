@@ -44,4 +44,8 @@ public class ActionService {
 
         this.actionDAO.batchInsert(actions);
     }
+
+    public String forTest(Boolean isSomething) {
+        return isSomething == true ? "something is true" : "something is false";
+    }
 }
